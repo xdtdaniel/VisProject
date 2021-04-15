@@ -51,6 +51,10 @@ With all the elements above, we have a fully integrated suite of both network st
 
 The interactive version of the network can be accessed [here](radar_network.html).
 
+We also have a version support multiple edges in between two switches.
+
+[NetworkMulti](radar_network_multi.html).
+
 #### Timeseries Performance Plots
 
 For network monitoring, having historical performance metrics visualized is also important. Clients may want to have analysis to historical data to find the **abnormal / extreme** points along the timeline.
