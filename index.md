@@ -11,9 +11,13 @@ Recent advances in High Performance Computing (HPC) have provided the fast proce
 
 With the recent advances in interconnect technology and increasing cost of communication, providing efficient data movement between nodes on the communication fabric is essential to guarantee optimized end-to-end solutions.
 
-There is a need for interactive and straightforward visualization tool to better utilize and arrange the computing resources. The idea of this project is to give a clear visualization how the HPC infrastructure perform and how individual nodes in that network communicate with each other.
+There is a need for interactive and straightforward visualization tool to better utilize and arrange the communication details happening on the network. The idea of this project is to give a clear visualization how the HPC infrastructure perform and how individual nodes in that network communicate with each other.
 
+### problem statement
 
+* How can we visualize the network topology along with link usage in an easy-to-interpret manner?
+* How can we visualize the details of link traffic in an easy manner?
+* 
 ### Visualizations
 
 With this in mind, we provide a suite of visualizations to meet the clients' need for understanding the HPC network.
