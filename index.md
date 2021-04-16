@@ -29,6 +29,22 @@ The data is obtained from storage units of OSU INAM\cite{inamdownload}. A SQL du
 
 With this in mind, we provide a suite of visualizations to meet the clients' need for understanding the HPC network.
 
+#### Timeseries Performance Plots
+
+For network monitoring, having historical performance metrics visualized is also important. Clients may want to have analysis to historical data to find the **abnormal / extreme** points along the timeline.
+
+We hear from our clients and implement the timeseries performance plots. The plots give information about sending/receiving package number and bits for a certain node in a period of time. Clients can easily drag the timeline to limit the timeframe shown on the plot.
+
+Clients will first use the overall view to identify the abnormal point.
+
+![Extreme](NoZoom.png)
+
+Then, the client can zoom in to check detailed numbers for that region.
+
+![Zoom](Zoom.png)
+
+The interactive version of the timeseries performance plot can be accessed [here](data_line_plot.html).
+
 #### Network
 We started by visualizing the topological structure of all our computing nodes. The plot simply shows the connections between nodes with color indicating the node types (red->switches, white->normal nodes).
 
@@ -92,18 +108,4 @@ Please check the interactive version down below.
 [LargeNetworkMulti](radar_network_multi_scale.html)
 [LargeNetworkSingle](radar_network_scale.html)
 
-#### Timeseries Performance Plots
 
-For network monitoring, having historical performance metrics visualized is also important. Clients may want to have analysis to historical data to find the **abnormal / extreme** points along the timeline.
-
-We hear from our clients and implement the timeseries performance plots. The plots give information about sending/receiving package number and bits for a certain node in a period of time. Clients can easily drag the timeline to limit the timeframe shown on the plot.
-
-Clients will first use the overall view to identify the abnormal point.
-
-![Extreme](NoZoom.png)
-
-Then, the client can zoom in to check detailed numbers for that region.
-
-![Zoom](Zoom.png)
-
-The interactive version of the timeseries performance plot can be accessed [here](data_line_plot.html).
