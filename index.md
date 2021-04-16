@@ -13,7 +13,7 @@ With the recent advances in interconnect technology and increasing cost of commu
 
 There is a need for interactive and straightforward visualization tool to better utilize and arrange the communication details happening on the network. The idea of this project is to give a clear visualization how the HPC infrastructure perform and how individual nodes in that network communicate with each other.
 
-### problem statement
+### Problem Statement
 
 * How can we visualize the network topology along with link usage in an easy-to-interpret manner?
 * How can we visualize the details of network topology in an easy manner?
@@ -54,11 +54,37 @@ With all the elements above, we have a fully integrated suite of both network st
 
 ![NetworkFull](NetworkFull.png)
 
-The interactive version of the network can be accessed [here](radar_network.html).
+The interactive version of the network can be accessed down below.
 
-We also have a version support multiple edges in between two switches.
+[NetworkMulti](radar_network_multi.html)
+[NetworkSingle](radar_network.html)
 
-[NetworkMulti](radar_network_multi.html).
+#### Scalability
+
+We add 30x more nodes and 20x more links to assess the scalability of our design. The results are as follow:
+
+In single link setting, the network can perform reasonably.
+
+![SingleScale](single_scale.png)
+
+After zooming in, we can still get very clear information about nodes and edges in our network, especially the information relevant to a particular switch node.
+
+![ZoomSingleScale](zoom_single_scale.png)
+
+For multi link setting, the readability of the overall network compromises.
+
+![MultiScale](multi_scale.png)
+
+After zooming in, we can see information about the nodes. But the information for links are harder to comprehend.
+
+![ZoomMultiScale](zoom_multi_scale.png)
+
+As a result, we would suggest that the clients use several subplots for different components of the network for the best performance.
+
+Please check the interactive version down below.
+
+[LargeNetworkMulti](radar_network_multi_scale.html)
+[LargeNetworkSingle](radar_network_scale.html)
 
 #### Timeseries Performance Plots
 
