@@ -6,18 +6,24 @@ Dantong Xue (xue.425), Alex Shearer (shearer.145), Pouya Kousha (kousha.2)
 ### Introduction
 
 Recent advances in High Performance Computing (HPC) have provided the fast processing engine for HPC applications.
+Designing a monitoring and profiling visualization tool for network
+analysis is a challenging task. 
+Newer set of challenges come out as High Performance Computing (HPC) systems become more complex and users need better visualization capabilities for **detailed network communication traffic** . A breakdown of traffic is required to understand the application behavior in terms of communication while not loosing general view of network traffic. Such visualization capability is currently missing or not studied well.  
 
 ![HPC](supercomputer.jpeg)
 
-With the recent advances in interconnect technology and increasing cost of communication, providing efficient data movement between nodes on the communication fabric is essential to guarantee optimized end-to-end solutions.
+We use the data gathered by OSU INAM - a network monitoring tool that gathers, stores profiling data for Infiniband network. By having the data we investigate visualization techniques to demonstrate the data in a more efficient, easy to interpret and holistic manner. Such visualization designs will help the users and the management team to understand the underlying structure of the network and resource utilization for the nodes in the system.
 
 There is a need for interactive and straightforward visualization tool to better utilize and arrange the communication details happening on the network. The idea of this project is to give a clear visualization how the HPC infrastructure perform and how individual nodes in that network communicate with each other.
+### Understanding the Data
+
+The data is obtained from storage units of OSU INAM\cite{inamdownload}. A SQL dump is performed with useful tables exported as csv files. The data is provided by Pouya Kousha (one of our teammates) under the approval of his supervisor. For the network topology three types of tables are provided: Links, nodes. The nodes table consist of type of the nodes (compute node or switch), Global Unique IDentifier (GUID), Local IDentifier (LID), node name, and number of ports. The links table include information on source and destination (GUID, port) pair, type of the link depending on being switch<->switch link or node<->switch, link width, and link speed. For the network traffic we have port data counters table. In this table we show the network traffic for every link in the network. Since the information from both endpoints of link are the same, the data only gathers the counters from switch endpoints and leaving the nodes uncollected to optimize the data collection speed. The table includes the switch GUID, the port number, transmitted data (xmit\_data), received data (rcv\_data), number of sent/received packets, uni-cast sent/received data, multi-cast sent/received data, and time the entry was added on. The data consist of 3557 entire sweep of the entire network of 60 nodes. 
 
 ### Problem Statement
 
-* How can we visualize the network topology along with link usage in an easy-to-interpret manner?
-* How can we visualize the details of network topology in an easy manner?
-* How can we present the network traffic of links in an interactive manner?
+* How can the network topology be visualized along with link usage in an easy-to-interpret manner?
+* Can we visualize the details of network topology like connectivity and show link usage?
+* How can we present the network traffic of links in an interactive manner without compressing the data points?
 
 ### Visualizations
 
