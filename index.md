@@ -16,8 +16,9 @@ There is a need for interactive and straightforward visualization tool to better
 ### problem statement
 
 * How can we visualize the network topology along with link usage in an easy-to-interpret manner?
-* How can we visualize the details of link traffic in an easy manner?
-* 
+* How can we visualize the details of network topology in an easy manner?
+* How can we present the network traffic of links in an interactive manner?
+
 ### Visualizations
 
 With this in mind, we provide a suite of visualizations to meet the clients' need for understanding the HPC network.
