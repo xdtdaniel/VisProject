@@ -3,6 +3,8 @@
 Authors: 
 Dantong Xue (xue.425), Alex Shearer (shearer.145), Pouya Kousha (kousha.2)
 
+The final report of this project can be found [here](Visual Analysis Platform for Operation Data of.pdf).
+
 ### Introduction
 
 Recent advances in High Performance Computing (HPC) have provided the fast processing engine for HPC applications.
